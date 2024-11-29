@@ -1,7 +1,7 @@
 import add_books
 import view_all_books
 
-all_books = []
+all_booksList = []
 
 while True:
     print("Welcome to library Management System")
@@ -17,8 +17,8 @@ while True:
         break
     
     elif menu == "1":
-         all_books= add_books.add_books_funtion(all_books)
+         all_booksList= add_books.add_books_funtion(all_booksList)
     elif menu == "2":
-         view_all_books.view_all_books_function(all_books)
+         view_all_books.view_all_books_function(all_booksList)
     else:
          print("Choose a valid number")
