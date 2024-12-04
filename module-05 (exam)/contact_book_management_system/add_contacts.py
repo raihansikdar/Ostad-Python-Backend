@@ -41,6 +41,13 @@ def add_contact_function(add_contact):
 
    except ValueError as e:
       print(f"{e}")
+      print(f"-------Input Guidencs---------")
+      print("Name: String"),
+      print("Email: String"),
+      print("Phone Number: Digit(int)"),
+      print("Address: String"),
+      print(f"--------------X----------------")
+      
       return add_contact
       
 
