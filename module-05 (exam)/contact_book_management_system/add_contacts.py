@@ -6,7 +6,7 @@ def add_contact_function(add_contact):
    try:
 
         name = input("Enter name : ").strip()
-        if not name.isalpha():
+        if not all(part.isalpha() for part in name.split()):
             raise ValueError('-----Name must be string-----')
         
         email = input("Enter email : ").strip()
@@ -65,7 +65,8 @@ def check_phone_no_exist_function(phone_number_exist: int):
                     return False
     
     except FileNotFoundError:
-        print("Error: The file 'all_contact_book.csv' was not found. Please ensure the file exists.")
+        # print("Error: The file 'all_contact_book.csv' was not found. Please ensure the file exists.")
+        return None
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
