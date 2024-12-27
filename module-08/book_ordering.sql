@@ -10,15 +10,15 @@ CREATE TABLE Books (
     BookID INT PRIMARY KEY,
     Title VARCHAR(100),
     Author VARCHAR(100),
-    Genre VARCHAR(50),
-    Price DECIMAL(10, 2)
+    Genre VARCHAR(255),
+    Price DECIMAL(10, 3)
 );
 
 CREATE TABLE Orders (
     OrderID INT PRIMARY KEY,
     CustomerID INT,
     OrderDate DATE,
-    TotalAmount DECIMAL(10, 2),
+    TotalAmount DECIMAL(10, 3),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
 );
 
