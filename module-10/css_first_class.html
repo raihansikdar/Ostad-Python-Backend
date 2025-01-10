@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <style>
+
+
+        /*--- Universal selector ---*/
+        * {
+        
+            background-color: antiquewhite;
+        }
+     /*--- Element selector ---*/
         h2{
             color: blue;
             font-size: 40px;
             text-align: right;
         }
+        /*--- Class selector ---*/
 
         .redColor{
             color: red;
             font-size: 50px;
         }
+        /*--- ID selector ---*/
         #blueColor{
             color: blue;
             font-size: 20px;
+        }
+        /*--- Group Tag selector ---*/
+        h4,h5,p{
+            color: aqua;
+            font-size: 30px;
         }
 
     </style>
@@ -28,6 +43,14 @@
     <h3 class="redColor">This is headline 3 first one</h3>
     <h2>This is <span class="redColor"> Heading</span> 2</h2>
     <h3 id="blueColor">This is headline 3 second one</h3>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Libero mollitia assumenda sequi necessitatibus, nisi voluptatem
+         provident, fugit expedita dolores enim modi quaerat dolorum 
+         beatae nesciunt ullam amet voluptas? Laudantium, dolor?</p>
+
+    <h4>This is headindg four</h4>
+    <h5>This is heading five</h5>
 
  </body>
  </html>
