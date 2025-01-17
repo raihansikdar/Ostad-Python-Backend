@@ -1,0 +1,40 @@
+ /*--- Universal selector ---*/
+ /* * {
+       
+    background-color: antiquewhite;
+} */
+/*--- Element selector ---*/
+h2{
+    color: blue;
+    font-size: 40px;
+    text-align: right;
+}
+/*--- Class selector ---*/
+
+.redColor{
+    color: red;
+    font-size: 50px;
+}
+/*--- ID selector ---*/
+#blueColor{
+    color: blue;
+    font-size: 20px;
+}
+/*--- Group Tag selector ---*/
+h4,h5,p{
+    color: aqua;
+    font-size: 30px;
+}
+.bgBox{
+    height: 500px;
+    color: white;
+    background-color: antiquewhite;
+    background-image: url("https://www.w3schools.com/css/img_lights.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+     /* Flexbox properties */
+     display: flex;
+     justify-content: center; /* Horizontally center */
+     align-items: center; /* Vertically center */
+}

@@ -1,0 +1,240 @@
+:root{
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+/* NavBar section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav .left a{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+nav .right a{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+}
+nav.right a span{
+    margin-left: 5rem;
+}
+
+
+
+/* Hero section */
+
+
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 2rem;
+    margin:  2rem 0;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.hero-section .headshot img {
+    width: 350px;
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 50%;
+}
+.hero-section .text {
+    flex: 5;
+}
+
+
+.hero-section .text h2 {
+    font-size: 45px;
+}
+
+.hero-section .text .links {
+    margin-top: 25px;
+}
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px; 
+}
+
+.hero-section .text p {
+    text-align: justify; 
+}
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+
+
+.hero-section .headshot {
+    flex: 3;
+    display: flex;
+    justify-content: right;
+}
+
+
+/* skill section */
+.skill-section{
+    padding: 0 50px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.skills-section h2 {
+    font-size: 35px;
+    text-align: center;
+}
+.skills-section p {
+    
+    text-align: center;
+}
+.skills-section .skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .skills .skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+
+/* Project section */
+.project-section{
+    padding: 0 50px;
+    margin-top: 50px;
+}
+
+.project-section h2 {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.project-section .project h3 {
+    padding-top: 20px;
+}
+
+.project-section .project p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.project-section .project {
+    
+    text-align: justify;
+    
+}
+
+
+
+/* Contact */
+
+
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    text-align: justify;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input,
+.contact-section .group form textarea {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--link-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 2px solid var(--link-color);
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.contact-section .group form button:hover {
+    filter: brightness(0.9);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
