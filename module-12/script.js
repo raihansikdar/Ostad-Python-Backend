@@ -10,3 +10,8 @@ if(age >= 18){
 }else{
     document.write("You are not adult");
 }
+let a = 10;
+
+let b = "5";
+
+console.log(a + b);
